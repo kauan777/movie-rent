@@ -1,0 +1,7 @@
+{
+    "markdown.suggest.paths.enabled": true,
+    "editor.renderFinalNewline": true,
+    "editor.renderLineHighlightOnlyWhenFocus": true,
+    "files.insertFinalNewline": false,
+    "html.format.preserveNewLines": true
+}
