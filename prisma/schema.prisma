@@ -22,7 +22,7 @@ model Movie {
   id            String      @id @default(uuid())
   title         String      @unique
   duration      Int
-  realease_data DateTime
+  release_date DateTime
   movie_rent    MovieRent[] @relation("movie")
 
   @@map("movies")
