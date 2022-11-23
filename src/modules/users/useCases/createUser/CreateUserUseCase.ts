@@ -1,5 +1,5 @@
 import { User } from "@prisma/client";
-import { prisma } from "../../../../../prisma/prisma/client";
+import { prisma } from "../../../../prisma/client";
 import { AppError } from "../../../../erros/AppError";
 import { CreateUserDTO } from "../../dtos/CreateUserDTO";
 
