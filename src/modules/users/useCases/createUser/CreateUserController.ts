@@ -1,4 +1,5 @@
 import { Request, Response } from "express";
+import { AppError } from "../../../../erros/AppError";
 import { CreateUserUseCase } from "./createUserUseCase";
 
 export class CreateUserController {
@@ -6,7 +7,7 @@ export class CreateUserController {
     const { name, email } = req.body;
 
     if (!name || !email) {
-      return res.status(400).json("Some fields are empty");
+      throw new AppError("Some fields are empty");
     }
 
     const createUserUseCase = new CreateUserUseCase();
