@@ -17,7 +17,7 @@ export class CreateMovieUseCase {
     });
 
     if (movieAlreadyExists) {
-      throw new AppError("User already exists");
+      throw new AppError("Movie already exists");
     }
 
     //Create User
